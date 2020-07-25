@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bzmliy.Vivero.View.VentanaMenuController">
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="843.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/WhatsApp%20Image%202019-07-27%20at%2010.06.26%20PM.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fa0ff" height="337.0" layoutX="560.0" layoutY="160.0" opacity="0.85" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Button fx:id="registroRiego" contentDisplay="TOP" layoutX="262.0" layoutY="154.0" mnemonicParsing="false" onAction="#hacerClickRegistroRiego" opacity="0.85" prefHeight="141.0" prefWidth="153.0" text="Registro de riego">
+         <graphic>
+            <ImageView fitHeight="112.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Icono%20registro%20riego.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="riegoDia" layoutX="616.0" layoutY="437.0" mnemonicParsing="false" onAction="#hacerClickRiegoDia" opacity="0.85" text="Riego por dia" />
+      <Button fx:id="fotosProducto" layoutX="601.0" layoutY="370.0" mnemonicParsing="false" onAction="#hacerClickFotosProductos" opacity="0.85" text="Fotos por producto" />
+   <Button fx:id="back" layoutX="24.0" layoutY="548.0" mnemonicParsing="false" onAction="#hacerClickLogin" opacity="0.85" text="&lt;-     |     Regresar">
+         <font>
+            <Font name="BLACK OPS 2" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="informacion" layoutX="620.0" layoutY="53.0" mnemonicParsing="false" onAction="#hacerClickInfo" opacity="0.85" text="Informacion" />
+      <Button contentDisplay="TOP" layoutX="71.0" layoutY="152.0" mnemonicParsing="false" onAction="#productosClick" opacity="0.85" prefHeight="145.0" prefWidth="146.0" text="Productos">
+         <graphic>
+            <ImageView fitHeight="118.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Icono%20producto.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="71.0" layoutY="336.0" mnemonicParsing="false" onAction="#tiposDeProdClick" opacity="0.85" prefHeight="161.0" prefWidth="344.0" text="Tipos de producto">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Icono%20tipos%20prod.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="603.0" layoutY="302.0" mnemonicParsing="false" onAction="#productosPorTipo" opacity="0.85" text="Productos por tipo" />
+      <Button layoutX="588.0" layoutY="224.0" mnemonicParsing="false" onAction="#productosPorCond" opacity="0.85" text="Productos por condicion" />
+      <Label layoutX="626.0" layoutY="179.0" text="Tablas">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

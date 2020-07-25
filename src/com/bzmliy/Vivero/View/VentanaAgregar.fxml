@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bzmliy.Vivero.View.VentanaAgregar">
+   <ImageView fitHeight="518.0" fitWidth="777.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../Image/WhatsApp%20Image%202019-07-27%20at%209.56.11%20PM(1).jpeg" />
+      </image>
+   </ImageView>
+   <Button fx:id="back" layoutX="195.0" layoutY="381.0" mnemonicParsing="false" onAction="#hacerClickBack" text="&lt;-     |     Regresar">
+         <font>
+            <Font name="BLACK OPS 2" size="12.0" />
+         </font>
+      </Button>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="195.0" layoutY="126.0" prefHeight="27.0" prefWidth="110.0" text="Fecha" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <DatePicker fx:id="fecha" editable="false" layoutX="163.0" layoutY="168.0" promptText="fecha" />
+   <Button fx:id="agregar" layoutX="221.0" layoutY="263.0" mnemonicParsing="false" onAction="#hacerClickAgregar" text="Agregar" />
+</AnchorPane>

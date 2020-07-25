@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bzmliy.Vivero.View.HistorialController">
+   <children>
+      <ImageView fitHeight="463.0" fitWidth="780.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Fondo514.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="id_producto" focusTraversable="false" layoutX="18.0" layoutY="47.0" opacity="0.85" promptText="ID" />
+      <Button layoutX="167.0" layoutY="47.0" mnemonicParsing="false" onAction="#actualizarClick" opacity="0.85" text="Actualizar" />
+      <Button layoutX="323.0" layoutY="47.0" mnemonicParsing="false" onAction="#agregarClick" opacity="0.85" text="Agregar" />
+      <Button layoutX="18.0" layoutY="361.0" mnemonicParsing="false" onAction="#regrasarClick" opacity="0.85" text="Regresar" />
+      <Button layoutX="235.0" layoutY="47.0" mnemonicParsing="false" onAction="#borrarClick" opacity="0.85" text="Borrar" />
+      <TableView fx:id="tabla" focusTraversable="false" layoutX="18.0" layoutY="109.0" opacity="0.85" prefHeight="239.0" prefWidth="364.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="51.0" text="ID" />
+          <TableColumn fx:id="fecha" prefWidth="108.0" text="Fecha" />
+            <TableColumn fx:id="imagen" prefWidth="197.0" text="Imagen" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

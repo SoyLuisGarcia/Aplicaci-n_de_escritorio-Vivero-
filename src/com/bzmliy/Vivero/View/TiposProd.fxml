@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bzmliy.Vivero.View.TiposProdController">
+   <children>
+      <ImageView fitHeight="441.0" fitWidth="735.0" layoutX="-203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Fondo518.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="400.0" prefWidth="300.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="150.0">
+                     <children>
+                        <TextField fx:id="id_tipo" opacity="0.85" promptText="id del tipo" />
+                        <TextField fx:id="nombre" opacity="0.85" promptText="nobre del tipo" />
+                     </children>
+                  </VBox>
+                  <Separator opacity="0.0" prefHeight="0.0" prefWidth="8.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#actualizarClick" opacity="0.85" prefHeight="10.0" prefWidth="70.0" text="Actualizar" />
+                        <Button mnemonicParsing="false" onAction="#borraClick" opacity="0.85" prefHeight="10.0" prefWidth="70.0" text="Borrar" />
+                        <Button mnemonicParsing="false" onAction="#agregarClick" opacity="0.85" prefHeight="10.0" prefWidth="70.0" text="Agregar" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <Pane prefHeight="300.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tabla" layoutX="50.0" layoutY="50.0" opacity="0.85" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="id" prefWidth="48.0" text="id" />
+                      <TableColumn fx:id="tipo" prefWidth="139.0" text="Tipo" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Separator opacity="0.0" prefHeight="0.0" prefWidth="0.0" />
+                  <Button mnemonicParsing="false" onAction="#regresarClick" opacity="0.85" text="Regresar" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

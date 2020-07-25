@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bzmliy.Vivero.View.VerProductoController">
+   <children>
+      <ImageView fitHeight="421.0" fitWidth="742.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Fondo519.jpg" />
+         </image>
+      </ImageView>
+      <BorderPane fx:id="border" prefHeight="370.0" prefWidth="500.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="90.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="nombreProd" text="Nombre del producto" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#historialClick" opacity="0.85" text="Historial" />
+                  <Separator opacity="0.0" prefHeight="0.0" prefWidth="34.0" />
+                  <Button mnemonicParsing="false" onAction="#actualizarClik" opacity="0.85" text="Actualizar" />
+                  <Separator opacity="0.0" prefHeight="0.0" prefWidth="40.0" />
+                  <Button mnemonicParsing="false" onAction="#eliminarClick" opacity="0.85" text="Eliminar" />
+                  <Separator opacity="0.0" prefHeight="0.0" prefWidth="40.0" />
+                  <Button mnemonicParsing="false" onAction="#salirClick" opacity="0.85" text="Salir" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <HBox alignment="CENTER" prefHeight="230.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="407.0" prefWidth="251.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="251.0">
+                           <children>
+                              <Label text="Tipo: " textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="tipo" text="tipo" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="251.0">
+                           <children>
+                              <Label text="Condicion: " textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="condicion" text="condicion" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="251.0">
+                           <children>
+                              <Label text="Ingreso: " textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="fecha" text="fecha" textFill="WHITE">
+                                 <font>
+                                    <Font name="Arial" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="407.0" prefWidth="172.0">
+                     <children>
+                        <Label text="Dias de riego" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </Label>
+                        <Separator opacity="0.0" orientation="VERTICAL" prefHeight="27.0" prefWidth="0.0" />
+                        <TableView fx:id="tabla" opacity="0.85" prefHeight="137.0" prefWidth="172.0">
+                           <columns>
+                              <TableColumn fx:id="nombre" prefWidth="162.0" text="Dias" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
